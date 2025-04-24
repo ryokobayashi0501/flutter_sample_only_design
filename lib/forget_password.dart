@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
-class forget_password extends StatelessWidget {
-  final TextEditingController emailController = TextEditingController();
+class ForgotPassword extends StatefulWidget {
+  const ForgotPassword({super.key});
+
+  @override
+  State<ForgotPassword> createState() => _ForgotPasswordState();
+}
+
+class _ForgotPasswordState extends State<ForgotPassword> {
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +43,6 @@ class forget_password extends StatelessWidget {
             ),
             SizedBox(height: 40),
             TextField(
-              controller: emailController,
               decoration: InputDecoration(
                 labelText: 'Email',
                 border: OutlineInputBorder(
@@ -49,7 +54,7 @@ class forget_password extends StatelessWidget {
             SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
-                // メール送信処理は後で追加予定
+                
               },
               child: Text('Send Reset Email'),
               style: ElevatedButton.styleFrom(
