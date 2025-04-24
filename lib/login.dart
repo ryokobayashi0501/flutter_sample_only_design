@@ -17,20 +17,6 @@ class _LoginState extends State<Login> {
             children: [
               TextField(
                 decoration: InputDecoration(
-                  label: const Text('Full Name'),
-                    hintText: 'Enter Full Name',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.black12),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                ),
-              ),
-
-              TextField(
-                decoration: InputDecoration(
                   label: const Text('Email'),
                   hintText: 'Enter Email',
                   border: OutlineInputBorder(
